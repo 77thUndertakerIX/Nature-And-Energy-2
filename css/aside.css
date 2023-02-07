@@ -1,0 +1,108 @@
+aside{
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    background-image: url(../image/GalaxyBG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0%;
+    left: 0;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1s;
+}
+.close-box{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.closebtn{
+    color: aliceblue;
+    font-size: 10vmin;
+    margin-left: 50px;
+    text-decoration: none;
+}
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+background: #fe0000;
+color: white;
+}
+
+.profile-box{
+    height: fit-content;
+    display: block;
+
+}
+.profile-box > h1{
+    color: white;
+    text-align: center;
+    font-size: 6.2vmin;
+    margin: 5% 0;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    height: auto;
+    width: 30vmin;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+
+.profile-pic:hover{
+    transition: 0.5s;
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.icon-box{
+    font-size: 5vw;
+    text-align: center;
+    text-decoration: none;
+
+}
+.icon-box a{
+    text-decoration: none;
+    font-size: 7vmin;
+    border-radius: 50%;
+    width: 7vmin;
+}
+.icon-box a:hover{
+    border-radius: 10%;
+    width: 10vmin;
+    transition: 1s;
+}
+
+.innersidebar{
+    position: relative;
+    justify-content: center;
+}
+.innersidebar a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5vmin;
+    color: red;
+    text-decoration: none;
+    padding-bottom: 5%;
+    width: fit-content;
+}
+
+.innersidebar a:hover {
+    color: #ffffff;
+    font-size: 10vmin;
+    transition:0.5s;
+}

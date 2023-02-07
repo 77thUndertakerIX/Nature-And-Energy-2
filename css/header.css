@@ -1,0 +1,25 @@
+header{
+    height:fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.music-box{
+    max-width: fit-content;
+    overflow:auto;
+}
+.music-box > img {
+    height: 35vmin;
+    width: 35vmin;
+    
+}
+#MusicText{
+    font-size: 4vmin;
+    margin:auto 0;
+    height: 100%;
+}
+#MusicText > p {
+    text-align: center;
+    color: white;
+}

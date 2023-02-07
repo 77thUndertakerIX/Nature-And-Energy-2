@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature-and-Engery</title>
+
+    <link rel="stylesheet" href="../css/Resetbrowser.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/section.css">
+    <link rel="stylesheet" href="../css/aside.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/mainDiv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    
+
+    <script src="../script/script-bar.js"></script>
+    <script src="../script/typing-eff.js"></script>
+    <script src="../script/music-handler.js"></script>
+    <script src="../script/content.js"></script>
+
+
+</head>
+<body>
+    <div id="preloader">
+        <p><span id="preloaderText"></span></p>
+        <button id="srt-btn">Click me</button>
+    </div>
+    <aside id="side-bar">
+        <div class="close-box">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+
+        <div class="profile-box">
+            <img src="../image/profile.jpg" class="profile-pic" alt="profile">
+            <h1>77thUndertakerIX</h1>
+        </div>
+        <div class="innersidebar">
+            
+            <a href="">Profile</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            
+        </div>
+        <div class="icon-box">
+            
+            <a href="https://www.facebook.com/77UndertakerIX" class="fa fa-facebook" target="_blank"></a>
+            <a href="" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/sur_x_onez/" class="fa fa-instagram" target="_blank"></a>
+            
+        </div>
+    </aside>
+
+    <div class="mainDiv">
+        <header>
+            <div class = "music-box" >
+                <img src="../image/playbtn.png" id="Musicbtn" onclick="PlayNPauseMusic()">
+            </div>
+            <div id="MusicText">
+                <p id="playing-status">Now Playing</p>
+            </div>
+            <audio loop id="song" volume="0.3">
+                <source src="../music/Y2Mate.is - OST BGM Bronya's Game Studio - Honkai Impact 3rd-dZR8ahxIVUY-160k-1642779828137.mp3" type="audio/mp3">
+            </audio>
+        </header>
+        <section>
+            <div class="typing-box" onload="typingEffect()">
+                <h1><strong>NATURE </strong><span class="typing-eff" id="typing-eff"></span></h1>
+                <h2>and provides <span class="typing-eff" id="typing-eff2"></span> for us</h2>
+            </div>
+            <div id="main-body" class="main-body">
+                <div class="container-content" id="container-content">
+                    <h1>การอนุรักษณ์พลังงานและสิ่งแวดล้อม</h1>
+                    <p>คลิกเพื่อเข้าสู่เนื้อหา</p>
+                    <div class="content" id="content">
+                        <ul>
+                            <li><a style="text-decoration: none; color: rgb(0, 255, 94); font-size: 3.5vmin; " href="#">เข้าสู่หน้าหลัก</a></li>
+                            <li><a style="text-decoration: none; color: rgb(0, 255, 94); font-size: 3.5vmin; " href="#">พลังงานคือ (coming soon..)</a></li>
+                            <li><a style="text-decoration: none; color: rgb(0, 255, 94); font-size: 3.5vmin; ;"href="#">สิ่งแวดล้อมคือ (coming soon..)</a></li>
+                            <li><a style="text-decoration: none; color: rgb(0, 255, 94); font-size: 3.5vmin; " href="#">การอนุรักษณ์พลังงานและสิ่งแวดล้อม (coming soon..)</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="below-nav">
+            
+                <div class="blnav-btn" id="blnav-btn">
+                    <span style="
+                        color: rgb(103, 171, 255);
+                        cursor:pointer ;
+                        padding-left: 1.2%;
+                        font-size: 5vmin;"
+                        onclick="OpMorebtn()">
+                        &#9776;More
+                    </span>
+                </div>
+                <div class="MOption" id="MOption">
+                    <span style="
+                    color: rgb(103, 230, 255);
+                    cursor:pointer ;
+                    padding-left: 1.2%;
+                    font-size: 5vmin;"
+                    onclick="openNav()">
+                    &#9776;Contact
+                    </span>                
+                    <div class="SubJ" id="SubJ">
+                        <a href="https://www.w3schools.com/html/default.asp" id="subject">ภาษาที่ใช้เขียน</a>
+                        <a href="https://skw.ac.th/" id="subject">เกี่ยวกับโรงเรียน</a>
+                    </div>
+                    <div class="blclosebtn">
+                    <a href="javascript:void(0)" style="color: crimson; text-decoration: none;" onclick="closeMorebtn()" >&times;</a>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+    
+<script>
+    const text = "Loading ....  Please wait  ...."
+    const button = document.getElementById('srt-btn');
+    let velocity = 100;
+    let count = 0;
+    let TextLenght = text.length
+    let preloaderInterval = setInterval(preloaderText,velocity)
+
+    function preloaderText() {
+        console.log(counter)
+        const preloaderText = document.getElementById('preloaderText')    
+        if(count < TextLenght+1){
+            preloaderText.innerHTML += text.charAt(count)
+            count++
+        }else{
+            preloaderText.innerHTML = ""
+            count = 0
+        }
+    }
+    var loader = document.getElementById('preloader');
+    window.addEventListener("load",function(){
+        const preloader = document.getElementById('preloader')
+        const preloaderText = document.getElementById('preloaderText')    
+        clearInterval(preloaderInterval)
+        preloaderText.innerHTML = "WebPage is ready!"
+
+        button.style.width = "20vmin"
+        button.style.height = "20vmin"
+        button.style.marginBottom = "20vmin"
+        button.style.fontSize = "5vmin"
+
+        button.addEventListener('click', function() {
+            let currentOpacity = 1;
+            const intervalId = setInterval(function() {
+                preloader.style.opacity = currentOpacity;
+                currentOpacity -= 0.04;
+                if (currentOpacity <= 0) {
+                    clearInterval(intervalId);
+                    loader.style.display ="none"
+                }
+            }, 80);
+
+            document.getElementById('song').play()
+            console.log('Button was clicked');
+        });
+})
+</script>
+
+
+</body>
+</html>
