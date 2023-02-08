@@ -13,8 +13,8 @@
 }
 
 #preloader p{
-    font-size: 60px;
-    color: rgb(255, 0, 0);
+    font-size: 8vmin;
+    color: rgb(0, 200, 255);
     margin-top: 39%;
 }
 
