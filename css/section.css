@@ -47,14 +47,16 @@ section{
 .typing-box > h1 {
     font-size: 10vmin;
     color: white;
+    font-weight:bolder;
 }
 .typing-box > h1 > span{
     font-size: 7vmin;
-    color: rgb(0, 255, 94);
+    color: rgb(255, 251, 0);
 }
 .typing-box > h2{
     font-size: 4vmin;
     color: white;
+    font-weight:bolder;
 }
 .typing-box > h2 > span{
     font-size: 7vmin;
